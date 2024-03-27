@@ -60,7 +60,7 @@ main {
   margin-bottom: 0.5rem;
 }
 .form-group input, .form-group select {
-  width: 40%;
+  width: 100%;
   padding: 0.5rem;
   box-sizing: border-box;
 }
@@ -72,15 +72,17 @@ main {
 }
   
 .solotrip{
-  margin-left: 50%; 
-  margin-top: -400px;
+  margin-left: auto; 
+  margin-top: auto;
   max-width: 450px;
   max-height: 100%;
  border-radius: 20px;
   /* Tablet-sized screens (768px and above) */
-  @media screen and (max-width: 768px) {
-      margin-left: 5px; 
-      margin-top: 5px; 
-}
-}
+ } @media screen and (max-width: 768px) 
+ {
+  .solotrip{
+      margin: 5px auto; 
+      max-width: 100%; 
+}}
+
 

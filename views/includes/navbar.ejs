@@ -21,17 +21,32 @@
 
 <nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/listings"><i class="fa-regular fa-compass"></i></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" >
+      <a class="navbar-brand" href="/listings">
+        <i class="fa-regular fa-compass"></i>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup" >
         <div class="navbar-nav">
-          <a class="nav-link "  href="/">Home</a>
-          <a class="nav-link" href="/listings">Explore</a>
-          <a class="nav-link" href="/attractions">Tourist Attractions</a>
-          <a class="nav-link" href="/solotrip">Solo Trips</a>
-        </div>
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link "  href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/listings">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/attractions">Tourist Attractions</a>            
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/solotrip">Solo Trips</a>            
+            </li>
+          </ul>
+          
+
+
+         </div>
         <div class="navbar-nav ms-auto">
           <form class="d-flex" role="search">
             <input class="form-control me-2 search-inp" type="search" placeholder="Explore here">

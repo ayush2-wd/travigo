@@ -114,3 +114,17 @@ p {
     font-size: 12px;
     color: #888;
 }
+
+@media screen and (max-width: 768px) {
+    .images-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .travel,
+    .plane {
+        margin: 20px auto;
+        max-width: calc(50% - 40px);
+    }
+}

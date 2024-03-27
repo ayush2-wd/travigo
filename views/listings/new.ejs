@@ -29,13 +29,28 @@
     </div>
     
     <div class="row">
-
+        
     <div class="mb-3 col-md-4">
         <label for="price" class="form-label">Price</label>
         <input name="listing[price]" placeholder="1500" class="form-control" required>        
         <div class="invalid-feedback">Price should be a number only!</div>    
     </div>
-    
+    <div class="mb-3">
+        <label for="price" class="form-label">Category</label>
+        <select name="listing[category]" id="listing[category]" class="form-control" required>
+            <option value="Mountains">Mountains</option>
+            <option value="Beaches">Beaches</option>
+            <option value="Trending">Trending</option>
+            <option value="Rooms">Rooms</option>
+            <option value="Iconic-Cities">Iconic Cities</option>
+            <option value="Homely">Homely</option>
+            <option value="Camping">Camping</option>
+            <option value="Chilly">Chilly</option>
+            <option value="Farms">Farms</option>
+            <option value="Pools">Pools</option>
+        </select>
+    </div>
+
     <div class="mb-3 col-md-8">
         <label for="country" class="form-label">Country</label>
         <input name="listing[country]" placeholder="Bharat"  type="text" class="form-control" required>        

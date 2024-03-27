@@ -35,8 +35,11 @@ const listingSchema = new Schema({
     coordinates: {
       type: [Number],
       required: true
-    }
-  }
+    }}
+  // },category: { 
+  //   type: String,
+  //   enum: ["Trending","Rooms","Iconic-Cities","Mountains","Beaches","Homely","Camping","Chilly","Farms","Pools"]
+  // }
 });
 
 //Middleware to delete the whole review associated with a listing ; when a listing is deleted the whole review also gets deleted with it

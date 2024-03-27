@@ -113,10 +113,43 @@ body{
     padding-right: 0;
 }
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
 
 /* Map */
 
 #map { 
     height: 400px;
     width: 100vh; 
+}
+
+/* Media queries for responsive layout */
+@media (max-width: 768px) {
+    .card {
+        margin-left: 0;
+        margin-right: 0;
+    }#map {
+    
+        height: 300px; 
+        width: 50vh;
+    }
+}
+@media (max-width: 576px) {
+    #map {
+        height: 200px;
+        width: 50vh; 
+    }
+}
+@media (max-width: 320px) {
+    #map {
+        height: 200px;
+        width: 30vh; 
+    }
 }
