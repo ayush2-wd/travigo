@@ -23,37 +23,46 @@ body{
 }
 
 /* Footer */
-.f-info-links a{ 
-    text-decoration: none;
-    color: #222222;
-}
-.f-info-links a:hover{
-    text-decoration: underline;
-}
-.f-info-links, .f-info-brand{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.f-info-socials{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-}
-.f-info-socials i{
-    margin-right: 1rem;
-}
-.f-info{
+
+footer {
+    background-color: #00080a;
+    padding: 20px;
     text-align: center;
-    height: 8rem;
-    background-color: #ebebeb;
+    margin-bottom: -10px;
+    
+}
+
+.footer-container {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: space-evenly;
+    align-items: center;
+}
+
+.footer-info,
+.footer-links-div {
+    flex: 1;
+}
+
+.footer-info p {
+    margin: 5px 0;
+    color:rgb(255, 204, 0);
+}
+
+
+.footer-links-div {
+    text-align: center;
+    margin-left: 30px;
+    color: orangered;
+}
+
+.footer-heading {
+    margin-bottom: 10px;
+}
+
+
+.footer-world-img,
+.footer-world-img2{
+    width:600px;
 }
 
 /* Cards */
@@ -130,6 +139,36 @@ body{
     width: 100vh; 
 }
 
+
+/* Chatbot */
+
+#chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border: #007bff 2px  solid;
+    border-radius: 50%;
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+#chat-icon img {
+    width: 80%;
+    height: auto;
+}
+
+#chat-icon:hover {
+    transform: scale(1.1); /* Optional: Add hover effect */
+}
+
+
 /* Media queries for responsive layout */
 @media (max-width: 768px) {
     .card {
@@ -152,4 +191,29 @@ body{
         height: 200px;
         width: 30vh; 
     }
+}
+@media only screen and (max-width: 999px) {
+    .footer-world-img {
+        display: none;
+    }
+
+    .footer-world-img2 {
+        width: 100%; 
+        margin: 0; 
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1270px) {
+    .footer-world-img2 {
+        width: 500px;
+        margin-left:0px;
+        
+    }
+    
+    .footer-world-img {
+        margin-right:-40px;
+        width: 500px;
+        
+    }
+
+    
 }

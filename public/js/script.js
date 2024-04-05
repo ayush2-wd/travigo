@@ -1,3 +1,15 @@
+$(document).ready(function(){
+  // Check if the current page is the chatbot index.html
+  if (window.location.pathname.includes('/chatbot/index.html')) {
+      $('#chat-icon').hide(); // Hide the chat icon
+  }
+
+  $('#chat-icon').click(function(){
+      // This code will execute only if the chat icon is clicked
+      // You can add more actions here, such as showing the chat window
+  });
+});
+
 (() => {
     'use strict'
   
