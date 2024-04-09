@@ -113,6 +113,14 @@ app.get("/attractions",(req,res)=>{
     res.render("Tourist_Attractions/ta.ejs")
 });
 
+app.get('/terms', (req, res) => {
+    res.render('includes/terms.ejs'); 
+});
+
+app.get('/privacy', (req, res) => {
+    res.render('includes/privacy.ejs'); 
+});
+
 //Not found pages
 app.all("*",(req,res,next)=>{
     next(new ExpressError(404,"Page Not Found"));

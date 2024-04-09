@@ -168,6 +168,20 @@ footer {
     transform: scale(1.1); /* Optional: Add hover effect */
 }
 
+/* Terms And Conditions */
+.terms-content {
+    margin-top: 20px;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    line-height: 1.6;
+}
+
+.terms-content h2 {
+    margin-bottom: 10px;
+}
+
+.terms-content p {
+    margin-bottom: 20px;
+}
 
 /* Media queries for responsive layout */
 @media (max-width: 768px) {
